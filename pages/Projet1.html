@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles/style.css" rel="stylesheet">
+    <link rel="icon" href="../image/favicon-Portfolio.ico"/>
+    <title>Portefolio Aurélien H.</title>
+</head>
+<body>
+    <header class="">
+        <a class="placeRetour" href="../index.html" ><img class="retour" src="../image/favicon-Portfolio.png" alt="logo"></a>
+        <a href="../index.html#apropos">À propos</a>
+        <a href="../index.html#lienprojets">Projets</a>
+        <a href="../index.html#contact">Contact</a>
+    </header>
+    <main class="">
+        <h1 class="titreprojet"><span class="catégorie">Site |</span> Répertoire des projets de formation <span class="année projetime">2023</span></h1>
+        <h4>Description</h4>
+        <div class="description">Dans le cadre de la formation en BUT MMI, nous devions créer un site qui répertorie tous les projets de l’année. Le site doit être pourvu d'interactions simples et fonctionner grâce à une base de données. De plus le site doit fonctionner avec le motif MVC (Modèle, Vue, Contrôleur).</div>
+
+        <div class="fond" id="projets">  
+            <video autoplay controls ><source src='../video/Portefolio203.mp4' type='video/mp4'></video>
+        </div> 
+
+        <div class="explication">
+
+            <div class="textecontenu">Pour créer ce site, j’ai d’abord imaginé le design, sur Figma, de façon à ce qu’il soit beau et pratique. J’ai ensuite commencé à coder le site en HTML, en Css et en Javascript, en ajoutant des interactions telles que des changements de couleurs lorsque l’on passe la souris par-dessus un bouton. </div>
+            
+            <div class="cadre"><img class="imgprojet" src="../image/figma203.png" alt="Figma du site"></div>
+
+            <div class="cadre"><img class="imgprojet" src="../image/PhpMyAdmin.png" alt="Base de données sur PhpMyAdmin"></div>
+
+            <div class="textecontenu">Une fois le design codé, j’ai commencé à réfléchir à comment structurer la base de données qui regroupe tous les projets avec les titres, les descriptions, le contenu de chacune, etc. J’ai donc fait un MCD (Modèle Conceptuel de Données), où j’ai regroupé toutes les données allais ensemble par table. Pour chaque table j’ai choisi une donnée qui sera la clef primaire, qui permet d’identifier l'occurrence de la table (si c’est le projet 1 ou le projet 2, etc.). J’ai ensuite lié les différentes tables entre elles et ajouté les cardinalités. J’ai par la suite mis le MCD sous forme de MLD (Modèle Logique de Données) et créé la base de données sur PhpMyAdmin vis à Laragon. </div>
+
+            <div class="textecontenu">Après j’ai préparé les fichiers pour le MVC (Modèle, Vue, Contrôleur) avec un fichier modèle Php, sur lequel on se connecte à la base de données et on envoie les requêtes SQL pour récupérer les éléments désirés, des fichiers vues Php qui sont les différentes disposition des éléments de chaque page, et un fichier contrôleur Php affiche les éléments et la vue qui correspond à la page demandée. </div>
+            
+            <div class="cadre"><img class="imgprojet" src="../image/ConnexionBaseDeDonnées203.png" alt="Modèle - connexion du site à la base de donnée"></div>
+
+            <div class="cadre"><img class="imgprojet" src="../image/PhpGénérationContenu203.png" alt="Figma du site"></div>
+
+            <div class="textecontenu">Les éléments affichés dans la page AC / Justification sont disposés une fois à gauche, une fois à droite. Pour cela j’ai ajouté dans la table “justification”  l'attribut “rang” qui correspond au rang de la “justification” dans la page. Si le rang est pair l’élément est affiché à gauche, s’il est impair l’élément est affiché à droite.</div>
+
+        </div>
+
+
+        <h4>Outils utilisés pour ce projet</h4>
+        <div class="packUtilisé">
+            <div class="icones">
+                <div class="icone"><img class="icon" src="../icon/logo_VisualStudioCodeVFichier 2.png" alt="logo Visual Studio Code"><div class="nom_icon">Visual Studio Code</div></div>
+                <div class="icone"><img class="icon" src="../icon/logo_Laragon.png" alt="logo Laragon"><div class="nom_icon">Laragon</div></div>
+                <div class="icone"><img class="icon" src="../icon/logo_githubVFichier 1.png" alt="logo Github"><div class="nom_icon">Github</div></div>
+                
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="contenufoot">Aurélien <br>Hauptmann-Herbette <br>2023</div>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
