@@ -93,6 +93,78 @@ header>a:last-child:hover{
     margin-right: 4.29vw;
 }
 
+/**********recherche stage*****/
+
+svg{
+    width: 3vw;
+    height:3vw;
+}
+
+summary>svg:nth-child(1){
+    stroke: #962222;
+    width: 2vw;
+    height:2vw;
+}
+
+summary{
+    display: flex;
+    align-items: center;
+    margin: 1px;
+}
+
+summary:hover>.stage{
+    transition: 0.2s;
+    color: #c8bfbf;
+}
+
+summary:hover>svg:nth-child(3){
+    transition: 0.2s;
+    stroke: #c8bfbf;
+}
+
+.tourne{
+    rotate: 180deg;
+    transition:0.2s;
+}
+
+details{
+    z-index: 9;
+    position: fixed;
+    display: flex;
+    background-color: #426D5E;
+    right: 2vw;
+    bottom: 2vw;
+    border-radius: 35px;
+    color: white;
+    font-size: 1.5vw;
+    font-family:  sans-serif;
+    border: solid 4px #4e7c6b;
+    max-width: 25%;
+    padding: 1vw;
+}
+
+details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+    from {
+        margin-top:-10px;
+    }
+    to {
+        margin-top: 0;
+    }
+}
+
+.stage{
+    margin:1vw;
+    font-size: 1.55vw;
+    color: #ffffff;
+}
+
+/*****************************/
+
+
 .apropos{
     margin: 20px;
     background-color:  #426D5E;
@@ -606,6 +678,32 @@ footer{
         font-size: 2.2vw;
     }
 
+        .stage{
+        margin: 1.2;
+        font-size: 2.2vw;
+    }
+
+    details{
+        right: 2vw;
+        margin-top: 70vh;
+        border-radius: 25px;
+        font-size: 1.8vw;
+        border: solid 4px #4e7c6b;
+        max-width:33%;
+        padding: 1.5vw;
+    }
+    
+    svg{
+        width: 3.5vw;
+        height:3.5vw;
+    }
+    
+    summary>svg:nth-child(1){
+        stroke: #962222;
+        width: 2.5vw;
+        height:2.5vw;
+    }
+
     .grandephoto{
         width: 25vw;
         height: 25vw; 
@@ -736,6 +834,31 @@ footer{
     h2{
         margin: 20px;
         font-size: 3vw;
+    }
+
+     .stage{
+        margin: 1vw;
+        font-size: 3vw;
+    }
+
+    details{
+        right: 2vw;
+        margin-top: 70vh;
+        border-radius: 15px;
+        font-size: 2.5vw;
+        border: solid 4px #4e7c6b;
+        max-width:45%;
+        padding: 2vw;
+    }
+    
+    svg{
+        width: 4.5vw;
+        height: 4.5vw;
+    }
+    
+    summary>svg:nth-child(1){
+        width: 3.5vw;
+        height: 3.5vw;
     }
 
     .ancre{
