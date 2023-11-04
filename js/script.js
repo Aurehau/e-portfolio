@@ -2,7 +2,7 @@ const prpo = document.querySelector('.apropos');
 
 window.addEventListener('scroll', () =>{
     if (window.scrollY > 40){
-        document.querySelector("main>div:nth-child(2)").classList.add("scroll");
+        document.querySelector("main>div:nth-child(3)").classList.add("scroll");
         document.querySelector(".photo").classList.add("grandephoto");
         document.querySelector("h3").classList.add("visible");
         document.querySelector(".texte").classList.add("txtvisible");
@@ -10,7 +10,7 @@ window.addEventListener('scroll', () =>{
         document.querySelector("h1").classList.add("invisible");
     }
     else{
-        document.querySelector("main>div:nth-child(2)").classList.remove("scroll");
+        document.querySelector("main>div:nth-child(3)").classList.remove("scroll");
         document.querySelector(".photo").classList.remove("grandephoto");
         document.querySelector("h3").classList.remove("visible");
         document.querySelector(".texte").classList.remove("txtvisible");
@@ -48,3 +48,12 @@ window.addEventListener('scroll', () =>{
         document.querySelector(".retour").classList.remove("retourpetit");
     }
 });
+
+function rotation(){
+	document.querySelector("summary>svg:nth-child(3)").classList.toggle("tourne");
+}
+
+document.querySelector("summary").addEventListener(
+	"click",
+	rotation
+);
