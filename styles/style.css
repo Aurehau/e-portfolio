@@ -759,7 +759,7 @@ footer{
     }
 
     .carousel-items {
-        grid-template-columns: 48vw 48vw 48vw;
+        grid-template-columns: 48vw 48vw 48vw 48vw 48vw;
         overflow-x: scroll;
         margin-left: 0;
     }
@@ -946,7 +946,7 @@ footer{
     }
     
     .carousel-items {
-        grid-template-columns: 54vw 54vw 54vw;
+        grid-template-columns: 54vw 54vw 54vw 54vw 54vw;
         overflow-x: scroll;
         margin-left: 0;
     }
