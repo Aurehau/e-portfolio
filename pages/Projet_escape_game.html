@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles/style.css" rel="stylesheet">
+    <link rel="icon" href="../image/favicon-Portfolio.ico"/>
+    <title>Portefolio Aurélien H.</title>
+</head>
+<body>
+    <header class="">
+        <a class="placeRetour" href="../index.html" ><img class="retour" src="../image/favicon-Portfolio.png" alt="logo"></a>
+        <a href="../index.html#apropos">À propos</a>
+        <a href="../index.html#lienprojets">Projets</a>
+        <a href="../index.html#contact">Contact</a>
+    </header>
+    <main class="">
+        <h1 class="titreprojet"><span class="catégorie">Site |</span> Escape game à Mulhouse <span class="année projetime">2024</span></h1>
+        <h4>Description</h4>
+        <div class="description">En groupe de 2, nous devions faire un escape game à Mulhouse sous forme de site. L'objectif est de visiter la ville en faisant des jeux sur le téléphone. J'ai fait 2 des jeux sur le site ainsi que la majorité de l'histoire entre les jeux. <br> Pour les jeux, j'ai fait un labyrinthe dont l'objectif est de trouver un coffre. Une fois le coffre trouvé, on arrive dans la pièce reproduite en 3D, où on va trouver des indices pour ouvrir le coffre. Toutes les animations des personnages sont faites en css.</div>
+
+        <div class="fond" id="projets"> 
+            <div class="cadre-lien">
+                <a href="https://aurehau.github.io/SAE_402/" target="_blank" class="lien-site">Début de l'escape game</a>
+            </div>
+
+            <div class="cadre-lien">
+                <a href="https://aurehau.github.io/SAE_402/pages/labyrhinte" target="_blank" class="lien-site">Labyrinthe</a>
+            </div>
+
+            <div class="cadre-lien">
+                <a href="https://aurehau.github.io/SAE_402/pages/coffre.html" target="_blank" class="lien-site">Décors 3d</a>
+            </div>
+
+            <div class="cadre-lien">
+                <a href="https://aurehau.github.io/SAE_402/pages/fin2.html" target="_blank" class="lien-site">Fin / remise des gains</a>
+            </div>
+        </div> 
+
+        <div class="explication">
+
+            <div class="textecontenu">Pour faire le labyrinthe, j'ai désinné le décor sur Figma, ainsi que le personnage qui se déplasse. Le personnage se dirige vers la position de la souris et les murs sont matérialisés par des tests de position sur les axes X et Y. Si la prochaine position est 30 X et 5 Y mais qu'elle correspond à un mur alors le personnage n'avancera pas dans cette direction. <br>En fonction de la taille de l'écran, le labyrinthe peut dépasser. Si la position suivante est hors de l'écran, tout le labyrinthe est déplacé pour rester dans l'écran. </div>
+            
+            <div class="cadre"><img class="imgprojet" src="../image/Capture_escape_labyrinthe.png" alt="Figma du site"></div>
+
+            <div class="cadre"><img class="imgprojet" src="../image/Capture_escape_3d.png" alt="Base de données sur PhpMyAdmin"></div>
+
+            <div class="textecontenu">Pour le 2ème jeu, j'ai reproduit la pièce, où se trouve le coffre à trouver, en 3d avec 3ds max. J'ai fait la texture, sur la quelle il y a les indices, avec figma. j'ai ensuite mis le décors 3d sur le site web grâce à A-Frame.</div>
+
+            <div class="textecontenu">J'ai utilisé Figma pour dessiner tous les éléments, donc le personnage principal, les différents objets et autres illustrations. J'ai ensuite animé le personnage avec du css, j'ai notamment reproduit les yeux du personnage avec des div pour l'animer comme je le souhaitais.<br><br>On peut aussi noter qu'il y a une carte qui indique le chemin vers les lieux où se rendre pour visiter Mulhouse et faire les jeux.</div>
+            
+            <div class="cadre"><img class="imgprojet" src="../image/Capture_escape_personnage.png" alt="Modèle - connexion du site à la base de donnée"></div>
+
+        </div>
+
+
+        <h4>Outils utilisés pour ce projet</h4>
+        <div class="packUtilisé">
+            <div class="icones">
+                <div class="icone"><img class="icon" src="../icon/logo_VisualStudioCodeVFichier 2.png" alt="logo Visual Studio Code"><div class="nom_icon">Visual Studio Code</div></div>
+                <div class="icone"><img class="icon" src="../icon/logo_Laragon.png" alt="logo Laragon"><div class="nom_icon">Laragon</div></div>
+                <div class="icone"><img class="icon" src="../icon/logo_githubVFichier 1.png" alt="logo Github"><div class="nom_icon">Github</div></div>
+                
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="contenufoot">Aurélien <br>Hauptmann-Herbette <br>2023</div>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>

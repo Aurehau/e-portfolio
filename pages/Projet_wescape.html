@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles/style.css" rel="stylesheet">
+    <link rel="icon" href="../image/favicon-Portfolio.ico"/>
+    <title>Portefolio Aurélien H.</title>
+</head>
+<body>
+    <header class="">
+        <a class="placeRetour" href="../index.html" ><img class="retour" src="../image/favicon-Portfolio.png" alt="logo"></a>
+        <a href="../index.html#apropos">À propos</a>
+        <a href="../index.html#lienprojets">Projets</a>
+        <a href="../index.html#contact">Contact</a>
+    </header>
+    <main class="">
+        <h1 class="titreprojet"><span class="catégorie">Site |</span> Réservation escapes games <span class="année projetime">2024</span></h1>
+        <h4>Description</h4>
+        <div class="description">En groupe de 2 nous devions créer un site (fictif) pour réserver des escape games en pleine air. Sur ce projet je me suis principalement occupé du Back End, même si j'ai aussi apporté quelques idées de design. Sur ce site on retrouve la parti publique qui permet de trouver et réserver des escape games et la partie administrateur pour ajouter, modifier ou supprimer des escape games. Le site fonctionne en MVC (Modèle, Vue, Contrôleur) et avec une base de données. <br> Un des gros chalanges de ce site était la mise en place d'un système de traduction, ainsi qu'une solution de préremplissage des escape games.</div>
+
+        <div class="fond" id="projets"> 
+            <div class="cadre-lien">
+                <a href="https://aurehau.github.io/SPA-element/" target="_blank" class="lien-site">voir le site</a>
+            </div>
+        </div> 
+
+        <div class="explication">
+
+            <div class="textecontenu">J’ai commencé par réfléchir à comment structurer la base de données avec les escape games, les produits en vente et les comptes d'utilisateurs. J’ai donc fait un MCD (Modèle Conceptuel de Données), pour organiser toutes les données dont j'avais besoin. J’ai par la suite mis le MCD sous forme de MLD (Modèle Logique de Données) et créé la base de données sur PhpMyAdmin vis à Laragon. Les mots de passe des comptes sont cryptés dans la base de données.</div>
+            
+            <div class="cadre"><img class="imgprojet" src="../image/BDD_MCD_Wescape.png" alt="Figma du site"></div>
+
+            <div class="cadre"><img class="imgprojet" src="../image/Capture_json_trad.png" alt="Base de données sur PhpMyAdmin"></div>
+
+            <div class="textecontenu">Pour la traduction, en français et en anglais, tous les textes sont stoké dans un json. Chaque contenu a sa version en anglais et en français. Une fonction Javascript va se charger d'afficher le contenu sur le site en fonction de la langue choisie. Pour ajouter les escape game, il faut remplir le contenu en anglais et en français. J'ai choisi de fonctionner ainsi pour avoir une traduction adaptée à la langue, par exemple, une expression française traduite littéralement n'existe peut-être pas en anglais. De plus, la traduction automatique est déjà possible avec Google Traduction.</div>
+
+            <div class="textecontenu">Il faut savoir que dans cette situation, une entreprise organise des escape games dans plusieurs villes. Un escape game peut se retrouver dans plusieurs villes avec la même histoire, mais avec des noms de personnage et de lieu différent. Pour améliorer l'expérience des administrateurs, il est possible de soit créer un nouvel escape game, où là on remplit toutes les informations, ou on peut créer une nouvelle version d'un escape game dans une autre ville. Le formulaire sera alors déjà prérempli avec les informations communes, il ne restera plus qu'à modifier les noms des personnages et des lieux. </div>
+            
+            <div class="cadre"><img class="imgprojet" src="../image/Capture_BDD_wescape.png" alt="Modèle - connexion du site à la base de donnée"></div>
+
+        </div>
+
+
+        <h4>Outils utilisés pour ce projet</h4>
+        <div class="packUtilisé">
+            <div class="icones">
+                <div class="icone"><img class="icon" src="../icon/logo_VisualStudioCodeVFichier 2.png" alt="logo Visual Studio Code"><div class="nom_icon">Visual Studio Code</div></div>
+                <div class="icone"><img class="icon" src="../icon/logo_Laragon.png" alt="logo Laragon"><div class="nom_icon">Laragon</div></div>
+                <div class="icone"><img class="icon" src="../icon/logo_githubVFichier 1.png" alt="logo Github"><div class="nom_icon">Github</div></div>
+                
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="contenufoot">Aurélien <br>Hauptmann-Herbette <br>2023</div>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
